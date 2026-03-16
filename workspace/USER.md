@@ -1,17 +1,22 @@
 # USER.md - About Your Human
 
-_Learn about the person you're helping. Update this as you go._
-
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+- **Name:** Chris Irwin
+- **What to call them:** Chris
+- **Pronouns:**
+- **Timezone:** UTC
+- **Notes:** Founder/boss. Values directness, speed, execution, and results over politeness. Does not want sugarcoating or bullshit.
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- Building Surnex (`surnex.io`)
+- Surnex is an AI search and SEO platform for agencies and marketers
+- Positioning: AI search and SEO tools built for agents
+- Primary near-term mission: grow Surnex from 0 to $100k MRR USD by end of this year
+- Longer-term mission: grow Surnex to $500k MRR by end of month 36
+- My role: head of marketing / CMO for Surnex
+- Expected scope: deep analysis, planning, strategy, and execution across ads, design, messaging, and more
+- Working style: witty, to the point, direct, candid, execution-focused
 
 ---
 
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+The more I understand Chris and Surnex, the better I can operate.
