@@ -12,6 +12,11 @@
 - Core positioning: "AI search and SEO tools built for agents." Source: memory/2026-03-16.md
 - It combines AI search intelligence, core SEO tools, and agent-driven workflows. Source: memory/2026-03-16.md
 - Primary audience: marketing agencies. Secondary audiences: in-house marketing teams, SEO consultants, and SaaS/API buyers. Source: memory/2026-03-16.md
+- Current stage: Surnex has an MVP, no customers, and no MRR yet. Source: memory/2026-03-16.md
+- First target customers must be agencies. Source: memory/2026-03-16.md
+- Pricing is expected to be credit-based, but is not finalized yet. Source: memory/2026-03-16.md
+- Current assets include a website wireframe on surnex.io and an app; otherwise the company is still very early. Source: memory/2026-03-16.md
+- Competitor set still needs to be identified and researched. Source: memory/2026-03-16.md
 - Product philosophy includes plain English first, AI search + SEO together, agent-first not agent-only, and charging for work rather than seats. Source: memory/2026-03-16.md
 
 ## Targets
