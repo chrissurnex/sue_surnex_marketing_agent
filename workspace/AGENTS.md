@@ -119,10 +119,10 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 
 ## Voice Mode for Chris on Telegram
 
-In Chris's direct Telegram chat, voice behavior is special:
+In Chris's direct Telegram chat, voice behavior is standard and simple:
 
 - If Chris sends a **voice note / audio message**: reply with **normal text plus TTS audio**.
-- If Chris sends a **plain text message**: reply with **voice only** by using the `tts` tool, then respond with `NO_REPLY`.
+- If Chris sends a **plain text message**: reply with **text only**.
 - Preferred OpenAI TTS voice: **`marin`**.
 - Keep spoken replies concise, direct, and natural.
 - When replying to a voice note with text + audio, include a TTS tag so OpenClaw generates audio in addition to the visible text.

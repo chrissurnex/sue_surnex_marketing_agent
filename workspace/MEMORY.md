@@ -21,7 +21,7 @@
 
 ## Voice / Telegram Preferences
 
-- Chris wants Telegram voice interaction set up so voice notes get text + voice replies, and text messages get voice-only replies. Source: memory/2026-03-16.md
+- Chris wants Telegram voice interaction set up so voice notes get text + voice replies, and text messages get text-only replies. Source: memory/2026-03-16.md
 - Preferred OpenAI TTS voice is `marin`; backup candidates are `coral` and `nova`. Source: memory/2026-03-16.md
 
 ## Targets
