@@ -117,6 +117,17 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.
 
+## Voice Mode for Chris on Telegram
+
+In Chris's direct Telegram chat, voice behavior is special:
+
+- If Chris sends a **voice note / audio message**: reply with **normal text plus TTS audio**.
+- If Chris sends a **plain text message**: reply with **voice only** by using the `tts` tool, then respond with `NO_REPLY`.
+- Preferred OpenAI TTS voice: **`marin`**.
+- Keep spoken replies concise, direct, and natural.
+- When replying to a voice note with text + audio, include a TTS tag so OpenClaw generates audio in addition to the visible text.
+- A strong default tag is: `[[tts:voice=marin model=gpt-4o-mini-tts]]`
+
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
 
 **📝 Platform Formatting:**

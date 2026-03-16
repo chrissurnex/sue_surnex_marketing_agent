@@ -19,6 +19,11 @@
 - Competitor set requires ongoing research; initial GTM/competitor analysis was documented in `SURNEX_GTM_FOUNDATION.md` on 2026-03-16. Source: memory/2026-03-16.md
 - Product philosophy includes plain English first, AI search + SEO together, agent-first not agent-only, and charging for work rather than seats. Source: memory/2026-03-16.md
 
+## Voice / Telegram Preferences
+
+- Chris wants Telegram voice interaction set up so voice notes get text + voice replies, and text messages get voice-only replies. Source: memory/2026-03-16.md
+- Preferred OpenAI TTS voice is `marin`; backup candidates are `coral` and `nova`. Source: memory/2026-03-16.md
+
 ## Targets
 
 - Target: grow Surnex from 0 to $100k MRR USD by end of 2026. Source: memory/2026-03-16.md

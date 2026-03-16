@@ -37,4 +37,11 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## TTS
+
+- Preferred provider: OpenAI
+- Preferred voice: `marin`
+- Voice brief: fast, professional, female, premium
+- Backup voices worth trying later: `coral`, `nova`
+
 Add whatever helps you do your job. This is your cheat sheet.
