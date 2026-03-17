@@ -3,7 +3,7 @@
 - **Name:** Chris Irwin
 - **What to call them:** Chris
 - **Pronouns:**
-- **Timezone:** UTC
+- **Timezone:** Africa/Johannesburg (South Africa / Cape Town)
 - **Notes:** Founder/boss. Values directness, speed, execution, and results over politeness. Does not want sugarcoating or bullshit.
 
 ## Context
