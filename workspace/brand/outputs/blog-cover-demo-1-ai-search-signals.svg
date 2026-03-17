@@ -1,0 +1,56 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06090C"/>
+      <stop offset="1" stop-color="#0B1218"/>
+    </linearGradient>
+    <linearGradient id="limeLine1" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#B5FF48" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#7FD13A" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg1)"/>
+  <rect x="40" y="40" width="1520" height="820" rx="34" stroke="#222E37" stroke-width="2"/>
+  <path d="M0 760 C120 730 220 690 350 600" stroke="url(#limeLine1)" stroke-width="18" filter="url(#glow1)"/>
+  <path d="M1600 170 C1480 170 1370 190 1190 240" stroke="url(#limeLine1)" stroke-width="14" filter="url(#glow1)"/>
+  <path d="M1600 720 C1470 710 1360 680 1260 615" stroke="url(#limeLine1)" stroke-width="12" filter="url(#glow1)"/>
+
+  <rect x="90" y="100" width="620" height="700" rx="28" fill="#0C1217" stroke="#1F2B33" stroke-width="2"/>
+  <rect x="760" y="120" width="700" height="300" rx="28" fill="#0E151B" stroke="#1F2B33" stroke-width="2"/>
+  <rect x="930" y="470" width="530" height="290" rx="28" fill="#0C1217" stroke="#1F2B33" stroke-width="2"/>
+
+  <g opacity="0.85">
+    <rect x="130" y="155" width="72" height="14" rx="7" fill="#27333D"/>
+    <rect x="220" y="155" width="72" height="14" rx="7" fill="#27333D"/>
+    <rect x="310" y="155" width="72" height="14" rx="7" fill="#27333D"/>
+    <rect x="400" y="155" width="72" height="14" rx="7" fill="#27333D"/>
+    <rect x="490" y="155" width="72" height="14" rx="7" fill="#27333D"/>
+    <rect x="580" y="155" width="72" height="14" rx="7" fill="#27333D"/>
+  </g>
+
+  <rect x="130" y="250" width="600" height="455" rx="34" fill="#081015" fill-opacity="0.92" stroke="#32444E" stroke-width="2"/>
+  <text x="170" y="315" fill="#B5FF48" font-size="30" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="2">AI SEARCH VISIBILITY</text>
+  <text x="170" y="410" fill="#F4F7FA" font-size="84" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <tspan x="170" dy="0">How Agencies</tspan>
+    <tspan x="170" dy="96">Should Track AI</tspan>
+    <tspan x="170" dy="96">Search Visibility</tspan>
+    <tspan x="170" dy="96">in 2026</tspan>
+  </text>
+  <text x="170" y="675" fill="#97A2AC" font-size="24" font-family="Arial, Helvetica, sans-serif">Surnex blog cover demo</text>
+
+  <g opacity="0.9">
+    <rect x="810" y="165" width="280" height="100" rx="22" fill="#121B22" stroke="#25323B" stroke-width="2"/>
+    <rect x="1110" y="165" width="280" height="100" rx="22" fill="#121B22" stroke="#25323B" stroke-width="2"/>
+    <rect x="810" y="290" width="580" height="90" rx="22" fill="#121B22" stroke="#25323B" stroke-width="2"/>
+    <rect x="980" y="520" width="380" height="170" rx="22" fill="#121B22" stroke="#25323B" stroke-width="2"/>
+    <path d="M1000 645 L1075 610 L1150 632 L1235 565 L1320 590" stroke="#B5FF48" stroke-width="5" fill="none"/>
+    <circle cx="1000" cy="645" r="6" fill="#B5FF48"/><circle cx="1075" cy="610" r="6" fill="#B5FF48"/><circle cx="1150" cy="632" r="6" fill="#B5FF48"/><circle cx="1235" cy="565" r="6" fill="#B5FF48"/><circle cx="1320" cy="590" r="6" fill="#B5FF48"/>
+  </g>
+
+  <line x1="70" y1="70" x2="250" y2="70" stroke="#91E440" stroke-width="3"/>
+  <line x1="1350" y1="830" x2="1530" y2="830" stroke="#91E440" stroke-width="3"/>
+</svg>
