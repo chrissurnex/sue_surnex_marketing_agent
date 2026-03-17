@@ -92,7 +92,8 @@
       "timeoutMs": 30000,
       "openai": {
         "model": "gpt-4o-mini-tts",
-        "voice": "marin"
+        "voice": "marin",
+        "speed": 1.2
       },
       "modelOverrides": {
         "enabled": true
