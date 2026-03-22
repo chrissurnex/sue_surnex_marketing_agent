@@ -13,20 +13,30 @@ Use this skill to keep Surnex design work consistent.
 2. Treat `assets/approved-base-b2.png` as the visual anchor unless Chris explicitly changes direction.
 3. Treat `assets/final-logo-mark.jpg` as the only valid logo mark.
 4. Treat `assets/wordmark.svg` as the only valid wordmark.
-5. If generating feature/page-support images, enforce: **no logo, no text, no fake UI words**.
+5. Default all Surnex image generation to **the latest Nano Banana 2 model via Gemini**.
+6. If generating feature/page-support images, enforce: **no logo, no text, no fake UI words**.
+7. If direct Nano Banana 2 generation is unavailable, return polished prompts + composition specs. Do **not** silently switch to another provider unless Chris explicitly asks.
+
+## Execution default
+
+- **Default generator:** latest **Nano Banana 2** via Gemini
+- **Default behavior when user says “make images”:** write the prompt, generate the images, review the outputs, then refine once if needed
+- **Fallback behavior:** if Nano Banana 2 cannot be used, explain the blocker clearly and provide final prompts/specs instead of changing providers
+- **Do not default to OpenAI image generation for Surnex design work** unless Chris explicitly requests it
 
 ## Workflow
 
 ### 1. Classify the asset
 Choose one:
 - **Hero** — product/brand centerpiece
+- **Open graph** — social preview image with strong silhouette and low-detail readability
 - **Feature image** — supports a feature block or product capability
 - **Page-support image** — part of a real page section or 3-up row
 - **Banner** — wide brand or launch surface
 - **Blog cover** — editorial template surface
 
 ### 2. Set branding intensity
-- **Hero/Banner:** branding may appear, but only with the approved logo assets.
+- **Hero/Banner/Open graph:** branding may appear, but only with the approved logo assets and only when useful.
 - **Feature/Page-support/Blog cover:** default to no logo unless Chris explicitly asks for branding.
 
 ### 3. Set product fidelity
@@ -39,12 +49,42 @@ Default prompt shape:
 - approved base visual world
 - asset purpose
 - product-layout closeness level
+- branding level
 - no-logo/no-text rule if applicable
 - anti-drift constraints
+- framing/crop guidance for the target surface
 
 ### 5. Generate in small sets
-Generate 2–3 variants max, then review.
+Generate **2–3 variants max**, then review.
 Do not spray endless variations.
+
+### 6. Review and refine
+- Reject weak variants fast.
+- Keep only outputs that match the approved Surnex world.
+- If needed, do one tighter second pass with clearer composition and less drift.
+
+## Asset defaults
+
+### Hero
+- Wide landscape composition
+- Product-led centerpiece
+- Premium, dark, modular UI system
+- Controlled lime signal flow
+- Can include restrained branding if explicitly useful
+
+### Open graph
+- Social-preview-first composition
+- Strong central silhouette
+- Simpler than hero images
+- High contrast, low clutter, readable at small sizes
+- Avoid tiny detail that disappears in previews
+
+### Feature / page-support
+- No logo
+- No wordmark
+- No readable text
+- No fake UI labels
+- Closer to real product layout language
 
 ## Prompting rules
 
@@ -79,6 +119,7 @@ Reject outputs that:
 - drift away from the approved base world
 - become too abstract when product fidelity matters
 - become too screenshot-literal and lose polish
+- are too detailed or cluttered for open graph use
 
 ## Resources
 

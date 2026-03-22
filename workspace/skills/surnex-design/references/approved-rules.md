@@ -1,5 +1,10 @@
 # Approved Surnex Design Rules
 
+## Execution default
+- Generate Surnex images with the **latest Nano Banana 2 model via Gemini** by default.
+- If Nano Banana 2 generation is unavailable, return final prompts and composition specs instead of silently switching providers.
+- Do not use OpenAI image generation for Surnex design work unless Chris explicitly asks.
+
 ## Core visual world
 - UI-first
 - premium and elegant
