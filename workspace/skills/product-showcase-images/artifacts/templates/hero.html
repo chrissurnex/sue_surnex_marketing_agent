@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; overflow: hidden; background: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
+      .card { background: #171717; border: 1px solid #262626; border-radius: 16px; }
+      .grid-line { stroke: #262626; }
+    </style>
+  </head>
+  <body>
+    <main class="w-[1200px] h-[1200px] bg-neutral-950 p-10">
+      <section class="h-full grid grid-cols-[240px_1fr] gap-6">
+        <aside class="card p-5 space-y-3">
+          <div class="text-sm uppercase tracking-[0.2em] text-neutral-500">Surnex</div>
+          <div class="rounded-xl bg-lime-400/10 border border-lime-400/20 px-4 py-3 text-base text-lime-400">AI Visibility</div>
+          <div class="rounded-xl border border-neutral-800 px-4 py-3 text-base text-neutral-400">Comparisons</div>
+          <div class="rounded-xl border border-neutral-800 px-4 py-3 text-base text-neutral-400">Topic Gaps</div>
+        </aside>
+        <div class="space-y-6">
+          <div class="grid grid-cols-4 gap-4">
+            <div class="card p-5"><div class="text-sm text-neutral-500">Prompts</div><div class="text-4xl font-bold text-neutral-100">148</div></div>
+            <div class="card p-5"><div class="text-sm text-neutral-500">Citations</div><div class="text-4xl font-bold text-neutral-100">91</div></div>
+            <div class="card p-5"><div class="text-sm text-neutral-500">Wins</div><div class="text-4xl font-bold text-neutral-100">33</div></div>
+            <div class="card p-5"><div class="text-sm text-neutral-500">Share</div><div class="text-4xl font-bold text-lime-400">31%</div></div>
+          </div>
+          <div class="grid grid-cols-[1.25fr_0.75fr] gap-5 h-[calc(100%-124px)]">
+            <div class="card p-6 space-y-4">
+              <div class="text-xl font-semibold text-neutral-100">Visibility trend</div>
+              <svg viewBox="0 0 700 340" class="w-full"><line x1="0" y1="60" x2="700" y2="60" class="grid-line"/><line x1="0" y1="140" x2="700" y2="140" class="grid-line"/><line x1="0" y1="220" x2="700" y2="220" class="grid-line"/><path d="M0,270 C100,255 180,230 260,214 C350,196 430,152 520,118 C590,92 640,78 700,64" fill="none" stroke="#a3e635" stroke-width="4"/></svg>
+            </div>
+            <div class="space-y-5">
+              <div class="card p-6"><div class="text-xl font-semibold text-neutral-100 mb-4">Top topics</div><div class="space-y-3 text-lg"><div class="flex justify-between"><span>AI Overviews</span><span>18%</span></div><div class="flex justify-between"><span>Brand queries</span><span>14%</span></div><div class="flex justify-between"><span>Comparisons</span><span>11%</span></div></div></div>
+              <div class="card p-6"><div class="text-xl font-semibold text-neutral-100 mb-4">Citation rate</div><div class="text-6xl font-bold text-lime-400">62%</div><div class="mt-4 h-3 rounded-full bg-neutral-800 overflow-hidden"><div class="h-full w-[62%] rounded-full bg-lime-400"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

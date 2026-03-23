@@ -1,6 +1,6 @@
 ---
 name: product-showcase-images
-description: Create Surnex-style product showcase images for dark SaaS marketing pages by composing real HTML/CSS dashboard scenes and screenshotting them at high resolution. Use when the user wants homepage heroes, feature grid cards, spotlight images, dashboard mockups, or product visuals with readable text/data instead of abstract AI-generated artwork. Best for on-the-fly generation of branded dark+lime product images, reusable widget-based compositions, and fast iteration on SaaS marketing imagery.
+description: Create Surnex-style product showcase images for dark SaaS marketing pages by composing real HTML/CSS dashboard scenes and screenshotting them at high resolution. Use when the user wants homepage heroes, feature grid cards, spotlight images, dashboard mockups, or product visuals with readable text/data instead of abstract AI-generated artwork. Best for on-the-fly generation of branded dark+lime product images, reusable widget-based compositions, full 7-image page sets, and HTML/CSS-to-screenshot marketing imagery.
 ---
 
 # Product Showcase Images
@@ -16,11 +16,12 @@ Do **not** default to text-to-image models for these assets. Use real layout, re
 ## Quick start
 
 1. Read `references/design-system.md`.
-2. Use `artifacts/v6-widgets/index.html` as the widget library.
-3. Create or update one HTML composition for the requested image.
-4. Screenshot it at 2x scale with `scripts/screenshot.mjs`.
-5. Review for readability, spacing, and brand consistency.
-6. Refine once if needed.
+2. Read `references/pipeline.md` when the task includes page-set generation, screenshots, uploads, or page linking.
+3. Use `artifacts/v6-widgets/index.html` as the widget library.
+4. Create or update one HTML composition for the requested image.
+5. Screenshot it at 2x scale with `scripts/screenshot.mjs`.
+6. Review for readability, spacing, and brand consistency.
+7. Refine once if needed.
 
 ## Asset types
 
@@ -30,6 +31,20 @@ Choose one before building:
 - **Grid card** — 1200x900, padded framed composition
 - **Spotlight** — 1200x900, padded framed composition
 - **Dashboard mockup** — use the closest matching size unless Chris specifies otherwise
+
+## 7-image page-set default
+
+Unless Chris specifies otherwise, a full marketing page set contains 7 images:
+
+1. 01 hero dashboard — 1200x1200
+2. 02 feature grid card A — 1200x900
+3. 03 feature grid card B — 1200x900
+4. 04 feature grid card C — 1200x900
+5. 05 spotlight A — 1200x900
+6. 06 spotlight B — 1200x900
+7. 07 spotlight C — 1200x900
+
+See `references/pipeline.md` for slot rules.
 
 ## Workflow
 
@@ -129,6 +144,7 @@ Keep this skill lean.
 ## File layout
 
 - `references/design-system.md` — design rules and rendering constraints
+- `references/pipeline.md` — page slots, templates, screenshot pattern, credentials, API pipeline, anti-patterns
 - `artifacts/v6-widgets/index.html` — reusable widget library
 - `artifacts/templates/base.html` — minimal starter template
 - `scripts/screenshot.mjs` — Playwright screenshot helper
