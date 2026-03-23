@@ -1,0 +1,25 @@
+{
+  "candidates": [
+    {
+      "content": {},
+      "finishReason": "NO_IMAGE",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 6583,
+    "totalTokenCount": 6583,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 5293
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1290
+      }
+    ]
+  },
+  "modelVersion": "gemini-3.1-flash-image-preview",
+  "responseId": "9Rm5adL4ApWovdIPyJCQ6Aw"
+}
