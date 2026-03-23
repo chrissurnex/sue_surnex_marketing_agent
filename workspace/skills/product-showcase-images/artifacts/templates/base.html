@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Showcase Base</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; background: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
+      .showcase-frame { width: 100%; min-height: 100vh; background: #0a0a0a; }
+      .panel { background: #0a0a0a; border: 1px solid #262626; border-radius: 24px; padding: 40px; }
+      .card { background: #171717; border: 1px solid #262626; border-radius: 20px; }
+      .lime { color: #a3e635; }
+      .lime-bg { background: #a3e635; }
+      .grid-line { stroke: #262626; }
+    </style>
+  </head>
+  <body class="p-4">
+    <main class="showcase-frame">
+      <section class="panel h-[900px] flex items-center justify-center">
+        <div class="text-center space-y-4">
+          <div class="text-neutral-500 text-base">Starter template</div>
+          <h1 class="text-4xl font-semibold text-neutral-100">Build the composition here</h1>
+          <p class="text-neutral-400 text-lg">Use the widget library and screenshot this page at 2x.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

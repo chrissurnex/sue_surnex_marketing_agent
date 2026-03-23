@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Showcase Widget Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; background: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
+      .widget { background: #171717; border: 1px solid #262626; border-radius: 20px; }
+      .widget-title { font-size: 20px; line-height: 28px; font-weight: 600; color: #f5f5f5; }
+      .metric { font-size: 32px; line-height: 1.1; font-weight: 700; color: #fafafa; }
+      .caption { font-size: 14px; line-height: 20px; color: #a3a3a3; }
+      .label { font-size: 18px; line-height: 26px; color: #d4d4d4; }
+      .lime { color: #a3e635; }
+      .lime-bg { background: #a3e635; }
+      .grid-line { stroke: #262626; }
+    </style>
+  </head>
+  <body class="p-6">
+    <div class="max-w-[1600px] mx-auto space-y-8">
+      <header class="space-y-2">
+        <div class="text-neutral-500 text-sm uppercase tracking-[0.2em]">Widget Library</div>
+        <h1 class="text-3xl font-semibold text-neutral-100">Product Showcase Widgets</h1>
+        <p class="text-neutral-400 text-base">Copy these blocks into page-specific compositions. Keep lime as the only accent.</p>
+      </header>
+
+      <section class="space-y-4">
+        <h2 class="widget-title">1. Metric cards</h2>
+        <div class="grid grid-cols-4 gap-4">
+          <div class="widget p-6"><div class="caption mb-1">Topics Tracked</div><div class="metric">24</div><div class="caption mt-1 lime">+3 this week</div></div>
+          <div class="widget p-6"><div class="caption mb-1">AI Mentions</div><div class="metric">1.8k</div><div class="caption mt-1 lime">+14.2%</div></div>
+          <div class="widget p-6"><div class="caption mb-1">Citation Rate</div><div class="metric">62%</div><div class="caption mt-1 lime">+6 pts</div></div>
+          <div class="widget p-6"><div class="caption mb-1">Share of Voice</div><div class="metric">31%</div><div class="caption mt-1 lime">Top 3 in sector</div></div>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-2 gap-6">
+        <div class="widget p-6 space-y-4">
+          <h2 class="widget-title">2. Area chart</h2>
+          <svg viewBox="0 0 600 260" class="w-full">
+            <defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a3e635" stop-opacity="0.28"/><stop offset="100%" stop-color="#a3e635" stop-opacity="0"/></linearGradient></defs>
+            <line x1="0" y1="40" x2="600" y2="40" class="grid-line" /><line x1="0" y1="100" x2="600" y2="100" class="grid-line" /><line x1="0" y1="160" x2="600" y2="160" class="grid-line" /><line x1="0" y1="220" x2="600" y2="220" class="grid-line" />
+            <path d="M0,210 C40,200 80,190 120,180 C160,165 200,145 240,150 C280,154 320,120 360,110 C400,100 440,90 480,70 C520,55 560,50 600,36 L600,260 L0,260 Z" fill="url(#areaGrad)"/>
+            <path d="M0,210 C40,200 80,190 120,180 C160,165 200,145 240,150 C280,154 320,120 360,110 C400,100 440,90 480,70 C520,55 560,50 600,36" fill="none" stroke="#a3e635" stroke-width="3"/>
+          </svg>
+          <div class="flex justify-between caption"><span>30 days ago</span><span>Today</span></div>
+        </div>
+        <div class="widget p-6 space-y-4">
+          <h2 class="widget-title">3. Bar chart</h2>
+          <div class="h-[260px] flex items-end gap-4">
+            <div class="flex-1 rounded-t-xl bg-lime-400/20 h-[28%]"></div><div class="flex-1 rounded-t-xl bg-lime-400/25 h-[36%]"></div><div class="flex-1 rounded-t-xl bg-lime-400/30 h-[40%]"></div><div class="flex-1 rounded-t-xl bg-lime-400/40 h-[52%]"></div><div class="flex-1 rounded-t-xl bg-lime-400/50 h-[58%]"></div><div class="flex-1 rounded-t-xl bg-lime-400/60 h-[66%]"></div><div class="flex-1 rounded-t-xl bg-lime-400/70 h-[72%]"></div><div class="flex-1 rounded-t-xl bg-lime-400/80 h-[78%]"></div><div class="flex-1 rounded-t-xl bg-lime-400 h-[88%]"></div>
+          </div>
+          <div class="flex justify-between caption"><span>Jan</span><span>Sep</span></div>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-2 gap-6">
+        <div class="widget p-6 space-y-4">
+          <h2 class="widget-title">4. Horizontal bars</h2>
+          <div class="space-y-4">
+            <div><div class="flex justify-between label mb-2"><span>Surnex</span><span>74%</span></div><div class="h-3 rounded-full bg-neutral-800 overflow-hidden"><div class="h-full rounded-full bg-lime-400" style="width:74%"></div></div></div>
+            <div><div class="flex justify-between label mb-2"><span>BrightEdge</span><span>51%</span></div><div class="h-3 rounded-full bg-neutral-800 overflow-hidden"><div class="h-full rounded-full bg-lime-400/80" style="width:51%"></div></div></div>
+            <div><div class="flex justify-between label mb-2"><span>Semrush</span><span>43%</span></div><div class="h-3 rounded-full bg-neutral-800 overflow-hidden"><div class="h-full rounded-full bg-lime-400/60" style="width:43%"></div></div></div>
+          </div>
+        </div>
+        <div class="widget p-6 space-y-4">
+          <h2 class="widget-title">5. Topic list</h2>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between border border-neutral-800 rounded-xl px-4 py-3"><div><div class="label">AI Overviews</div><div class="caption">128 mentions • 18%</div></div><div class="w-11 h-6 bg-lime-400/20 rounded-full p-1"><div class="w-4 h-4 bg-lime-400 rounded-full ml-auto"></div></div></div>
+            <div class="flex items-center justify-between border border-neutral-800 rounded-xl px-4 py-3"><div><div class="label">Citation Gaps</div><div class="caption">92 mentions • 13%</div></div><div class="w-11 h-6 bg-neutral-800 rounded-full p-1"><div class="w-4 h-4 bg-neutral-500 rounded-full"></div></div></div>
+            <div class="flex items-center justify-between border border-neutral-800 rounded-xl px-4 py-3"><div><div class="label">Brand Queries</div><div class="caption">76 mentions • 11%</div></div><div class="w-11 h-6 bg-lime-400/20 rounded-full p-1"><div class="w-4 h-4 bg-lime-400 rounded-full ml-auto"></div></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="widget p-6 space-y-4">
+        <h2 class="widget-title">6. Data table</h2>
+        <div class="overflow-hidden rounded-2xl border border-neutral-800">
+          <table class="w-full text-left">
+            <thead class="bg-neutral-950 text-neutral-500 text-sm"><tr><th class="px-4 py-3">Date</th><th class="px-4 py-3">Domain</th><th class="px-4 py-3">Mentions</th><th class="px-4 py-3">Rate</th><th class="px-4 py-3">Volume</th></tr></thead>
+            <tbody class="text-base text-neutral-300">
+              <tr class="bg-neutral-900"><td class="px-4 py-4">Mar 18</td><td class="px-4 py-4">surnex.io</td><td class="px-4 py-4">184</td><td class="px-4 py-4 lime">62%</td><td class="px-4 py-4">14.2k</td></tr>
+              <tr class="bg-neutral-950"><td class="px-4 py-4">Mar 19</td><td class="px-4 py-4">competitor.com</td><td class="px-4 py-4">139</td><td class="px-4 py-4">47%</td><td class="px-4 py-4">11.1k</td></tr>
+              <tr class="bg-neutral-900"><td class="px-4 py-4">Mar 20</td><td class="px-4 py-4">agency.example</td><td class="px-4 py-4">166</td><td class="px-4 py-4 lime">58%</td><td class="px-4 py-4">12.6k</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-3 gap-6">
+        <div class="widget p-6 space-y-4"><h2 class="widget-title">7. Top gainers</h2><div class="space-y-3"><div class="flex justify-between label"><span>Brand mentions</span><span class="lime">+24%</span></div><div class="flex justify-between label"><span>Prompt coverage</span><span class="lime">+17%</span></div><div class="flex justify-between label"><span>Citation share</span><span class="lime">+12%</span></div></div></div>
+        <div class="widget p-6 space-y-4"><h2 class="widget-title">8. Top losers</h2><div class="space-y-3"><div class="flex justify-between label"><span>Uncited prompts</span><span class="text-red-400">-9%</span></div><div class="flex justify-between label"><span>Lost comparisons</span><span class="text-red-400">-6%</span></div><div class="flex justify-between label"><span>FAQ gaps</span><span class="text-red-400">-4%</span></div></div></div>
+        <div class="widget p-6 space-y-4"><h2 class="widget-title">9. Impact card</h2><div><div class="flex justify-between caption mb-2"><span>Trigger rate</span><span>74%</span></div><div class="h-3 rounded-full bg-neutral-800 overflow-hidden"><div class="h-full rounded-full bg-lime-400" style="width:74%"></div></div></div><div><div class="flex justify-between caption mb-2"><span>Citation rate</span><span>62%</span></div><div class="h-3 rounded-full bg-neutral-800 overflow-hidden"><div class="h-full rounded-full bg-lime-400/80" style="width:62%"></div></div></div></div>
+      </section>
+
+      <section class="grid grid-cols-2 gap-6">
+        <div class="widget p-6 space-y-4">
+          <h2 class="widget-title">10. Donut chart</h2>
+          <div class="flex items-center gap-8">
+            <svg viewBox="0 0 220 220" class="w-[220px] h-[220px]"><circle cx="110" cy="110" r="70" fill="none" stroke="#262626" stroke-width="24"/><circle cx="110" cy="110" r="70" fill="none" stroke="#a3e635" stroke-width="24" stroke-dasharray="290 440" stroke-linecap="round" transform="rotate(-90 110 110)"/></svg>
+            <div class="space-y-3 text-base">
+              <div class="flex items-center gap-3"><span class="w-3 h-3 rounded-full bg-lime-400 block"></span><span class="label">Cited prompts 66%</span></div>
+              <div class="flex items-center gap-3"><span class="w-3 h-3 rounded-full bg-neutral-700 block"></span><span class="label">Uncited prompts 34%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="widget p-6 space-y-4">
+          <h2 class="widget-title">11. Multi-line chart</h2>
+          <svg viewBox="0 0 600 260" class="w-full">
+            <line x1="0" y1="40" x2="600" y2="40" class="grid-line" /><line x1="0" y1="100" x2="600" y2="100" class="grid-line" /><line x1="0" y1="160" x2="600" y2="160" class="grid-line" /><line x1="0" y1="220" x2="600" y2="220" class="grid-line" />
+            <path d="M0,190 C80,175 120,170 180,150 C230,136 300,132 360,110 C420,90 480,80 600,58" fill="none" stroke="#a3e635" stroke-width="3"/>
+            <path d="M0,210 C80,205 120,194 180,182 C240,168 300,164 360,150 C420,138 500,128 600,116" fill="none" stroke="#737373" stroke-width="3"/>
+          </svg>
+          <div class="flex gap-6 caption"><span class="lime">Triggered</span><span class="text-neutral-400">Cited</span></div>
+        </div>
+      </section>
+
+      <section class="widget p-6 space-y-4">
+        <h2 class="widget-title">12. Priority gaps table</h2>
+        <div class="space-y-3">
+          <div class="grid grid-cols-[2fr_1fr_1fr_1.2fr] gap-4 rounded-xl border border-neutral-800 px-4 py-3"><div class="label">Brand query visibility</div><div class="label">#4</div><div class="text-red-400 label">No</div><div><div class="h-3 rounded-full bg-neutral-800 overflow-hidden"><div class="h-full rounded-full bg-lime-400" style="width:88%"></div></div></div></div>
+          <div class="grid grid-cols-[2fr_1fr_1fr_1.2fr] gap-4 rounded-xl border border-neutral-800 px-4 py-3"><div class="label">Agency comparison terms</div><div class="label">#6</div><div class="lime label">Yes</div><div><div class="h-3 rounded-full bg-neutral-800 overflow-hidden"><div class="h-full rounded-full bg-lime-400/80" style="width:71%"></div></div></div></div>
+          <div class="grid grid-cols-[2fr_1fr_1fr_1.2fr] gap-4 rounded-xl border border-neutral-800 px-4 py-3"><div class="label">Topic cluster prompts</div><div class="label">#8</div><div class="text-red-400 label">No</div><div><div class="h-3 rounded-full bg-neutral-800 overflow-hidden"><div class="h-full rounded-full bg-lime-400/70" style="width:64%"></div></div></div></div>
+        </div>
+      </section>
+
+      <section class="widget p-8 space-y-6">
+        <h2 class="widget-title">13. Full dashboard composite</h2>
+        <div class="grid grid-cols-[240px_1fr] gap-6">
+          <aside class="rounded-2xl border border-neutral-800 bg-neutral-950 p-5 space-y-3">
+            <div class="text-sm uppercase tracking-[0.2em] text-neutral-500">Surnex</div>
+            <div class="rounded-xl bg-lime-400/10 border border-lime-400/20 px-4 py-3 text-base text-lime-400">AI Visibility</div>
+            <div class="rounded-xl border border-neutral-800 px-4 py-3 text-base text-neutral-400">Comparisons</div>
+            <div class="rounded-xl border border-neutral-800 px-4 py-3 text-base text-neutral-400">Topic Gaps</div>
+            <div class="rounded-xl border border-neutral-800 px-4 py-3 text-base text-neutral-400">Actions</div>
+          </aside>
+          <div class="space-y-5">
+            <div class="grid grid-cols-4 gap-4">
+              <div class="widget p-5"><div class="caption">Prompts</div><div class="metric">148</div></div>
+              <div class="widget p-5"><div class="caption">Citations</div><div class="metric">91</div></div>
+              <div class="widget p-5"><div class="caption">Wins</div><div class="metric">33</div></div>
+              <div class="widget p-5"><div class="caption">Share</div><div class="metric">31%</div></div>
+            </div>
+            <div class="grid grid-cols-[1.25fr_0.75fr] gap-5">
+              <div class="widget p-6 space-y-4"><div class="widget-title">Visibility trend</div><svg viewBox="0 0 600 240" class="w-full"><line x1="0" y1="40" x2="600" y2="40" class="grid-line" /><line x1="0" y1="100" x2="600" y2="100" class="grid-line" /><line x1="0" y1="160" x2="600" y2="160" class="grid-line" /><path d="M0,180 C70,170 120,160 180,150 C260,135 320,110 420,90 C500,76 550,64 600,54" fill="none" stroke="#a3e635" stroke-width="3"/></svg></div>
+              <div class="widget p-6 space-y-3"><div class="widget-title">Top topics</div><div class="flex justify-between label"><span>AI Overviews</span><span>18%</span></div><div class="flex justify-between label"><span>Brand queries</span><span>14%</span></div><div class="flex justify-between label"><span>Comparison prompts</span><span>11%</span></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
