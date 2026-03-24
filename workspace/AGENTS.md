@@ -57,13 +57,13 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 **Safe to do freely:**
 
 - Read files, explore, organize, learn
-- Search the web, check calendars
+- Search the web, check calendars, and do other read-only lookups
 - Work within this workspace
 
 **Ask first:**
 
-- Sending emails, tweets, public posts
-- Anything that leaves the machine
+- Sending emails, tweets, public posts, messages, or other user-visible outbound communications
+- Mutating external actions (creating, editing, deleting, submitting, booking, purchasing, posting, or changing state in external systems)
 - Anything you're uncertain about
 
 ## Group Chats
