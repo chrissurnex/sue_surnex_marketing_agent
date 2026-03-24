@@ -6,6 +6,18 @@
 - **Timezone:** Africa/Johannesburg (South Africa / Cape Town)
 - **Notes:** Founder/boss. Values directness, speed, execution, and results over politeness. Does not want sugarcoating or bullshit.
 
+## Communication Preferences
+
+- In Chris's direct Telegram chat:
+  - If Chris sends a **voice note / audio message**: reply with **normal text plus TTS audio**
+  - If Chris sends a **plain text message**: reply with **text only**
+  - Keep spoken replies concise, direct, and natural
+  - When replying to a voice note with text + audio, include a TTS tag so OpenClaw generates audio in addition to the visible text
+- Platform behavior for Chris:
+  - **Discord/WhatsApp:** no markdown tables; use bullet lists instead
+  - **Discord links:** wrap multiple links in `<>` to suppress embeds: `<https://example.com>`
+  - **WhatsApp:** no headers; use **bold** or CAPS for emphasis
+
 ## Context
 
 - Building Surnex (`surnex.io`)

@@ -41,7 +41,9 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 - Preferred provider: OpenAI
 - Preferred voice: `marin`
+- Default tag for Chris Telegram voice-note replies: `[[tts:voice=marin model=gpt-4o-mini-tts]]`
 - Voice brief: fast, professional, female, premium
 - Backup voices worth trying later: `coral`, `nova`
+- Optional storytelling mode: if `sag` (ElevenLabs TTS) is available, use voice for stories, movie summaries, and "storytime" moments
 
 Add whatever helps you do your job. This is your cheat sheet.
